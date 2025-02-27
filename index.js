@@ -3,13 +3,13 @@ const morseCode = {
     'I': '..', 'J': '.---', 'K': '-.-', 'L': '.-..', 'M': '--', 'N': '-.', 'O': '---', 'P': '.--.',
     'Q': '--.-', 'R': '.-.', 'S': '...', 'T': '-', 'U': '..-', 'V': '...-', 'W': '.--', 'X': '-..-',
     'Y': '-.--', 'Z': '--..', '0': '-----', '1': '.----', '2': '..---', '3': '...--', '4': '....-',
-    '5': '.....', '6': '-....', '7': '--...', '8': '---..', '9': '----.', ' ': '/'
+    '5': '.....', '6': '-....', '7': '--...', '8': '---..', '9': '----.', ' ': '/', ',':'/'
 };
 const textInput = document.getElementById("textInput");
 
 textInput.addEventListener("input", function () {
-    this.style.height = "auto"; // Reset tinggi dulu
-    this.style.height = this.scrollHeight + "px"; // Set tinggi sesuai konten
+    this.style.height = "auto";
+    this.style.height = this.scrollHeight + "px";
 });
 
 function textToMorse(text) {
