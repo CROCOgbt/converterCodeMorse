@@ -6,15 +6,21 @@ const morseCode = {
     '5': '.....', '6': '-....', '7': '--...', '8': '---..', '9': '----.', ' ': '/', ',':'/'
 };
 const textInput = document.getElementById("textInput");
-
+const hehe = {
+    "DANANG":"YOTT",
+    "SHATRIA": "ANJING",
+    "SATRIA": "BABI"
+}
 textInput.addEventListener("input", function () {
     this.style.height = "auto";
     this.style.height = this.scrollHeight + "px";
 });
 
 function textToMorse(text) {
-    return text.toUpperCase().split('').map(char => morseCode[char] || '?').join(' ');
-}
+    return text.toUpperCase().split(' ').map(word=>{
+        let yoww = hehe[word] || word;
+        return yoww.split('').map(char => morseCode[char] || '').join(' ');
+    }).join(' / ')}
 
 document.addEventListener("DOMContentLoaded", () => {
     const inputField = document.getElementById("textInput");
