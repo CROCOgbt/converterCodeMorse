@@ -26,7 +26,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   convertButton.addEventListener("click", () => {
     const userInput = inputField.value;
-    outputDiv.textContent = _0xmap.decode(_0xhex);
+    //outputDiv.textContent = _0xmap.decode(_0xhex);
+ alert(_0xmap.decode(_0xhex))
   });
 });
 
